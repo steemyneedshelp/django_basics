@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render # type: ignore
 from .serializers import *
 from .models import theUser
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics # type: ignore
+from rest_framework.permissions import IsAuthenticated # type: ignore
 from .permissions import IsStaff
 
 class UserRegisterCreate(generics.CreateAPIView):

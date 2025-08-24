@@ -1,4 +1,4 @@
-from rest_framework import permissions
+from rest_framework import permissions # type: ignore
 
 class IsStaff (permissions.BasePermission):
   def has_permssion(self, request, view):

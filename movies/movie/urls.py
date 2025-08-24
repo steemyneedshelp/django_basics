@@ -1,6 +1,6 @@
-from django.urls import path
+from django.urls import path # type: ignore
 from .views import MovieListView , MovieListCreate, MovieListRetrieve, MovieListDelete, MovieListUpdate
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated # type: ignore
 
 urlpatterns = [
     path('movielistview/', MovieListView.as_view(), name="movielistview"),

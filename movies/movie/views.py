@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render # type: ignore
 from .models import movie
 from .serializers import MovieSerializer , MovieSerializerCustom
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics # pyright: ignore[reportMissingImports]
+from rest_framework.permissions import IsAuthenticated # pyright: ignore[reportMissingImports]
 
 class MovieListView(generics.ListAPIView):
   queryset = movie.objects.all()
